@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class StockTask : Task
 {
+    [SerializeField]
+    StockGamePanel gamePanel;
     protected override void OnStart()
     {
 
@@ -11,6 +13,6 @@ public class StockTask : Task
 
     public override void OnInteract()
     {
-
+        gamePanel.Show(); 
     }
 }
